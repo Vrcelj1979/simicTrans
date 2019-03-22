@@ -1,0 +1,126 @@
+[2019-02-02 22:12:47] production.ERROR: syntax error, unexpected 'public' (T_PUBLIC), expecting ']' {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected 'public' (T_PUBLIC), expecting ']' at /home/slobodan/Finisa2Z/config/mail.php:142)
+[stacktrace]
+#0 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(211): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 /home/slobodan/Finisa2Z/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-02-02 21:13:56] local.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /home/slobodan/Finisa2Z/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /home/slobodan/Finisa2Z/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('make')
+#1 /home/slobodan/Finisa2Z/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/slobodan/Finisa2Z/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-02-02 21:46:58] local.ERROR: No hint path defined for [mail]. (View: /home/slobodan/Finisa2Z/resources/views/vendor/mail/html/message.blade.php) {"exception":"[object] (ErrorException(code: 0): No hint path defined for [mail]. (View: /home/slobodan/Finisa2Z/resources/views/vendor/mail/html/message.blade.php) at /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:112, InvalidArgumentException(code: 0): No hint path defined for [mail]. at /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:112)
+[stacktrace]
+#0 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(InvalidArgumentException), 1)
+#1 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('/home/slobodan/...', Array)
+#2 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\\View\\Engines\\CompilerEngine->get('/home/slobodan/...', Array)
+#3 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\\View\\View->getContents()
+#4 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/View/View.php(90): Illuminate\\View\\View->renderContents()
+#5 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Http/Response.php(42): Illuminate\\View\\View->render()
+#6 /home/slobodan/Finisa2Z/vendor/symfony/http-foundation/Response.php(202): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Router.php(722): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#32 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#33 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#34 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#35 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /home/slobodan/Finisa2Z/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 /home/slobodan/Finisa2Z/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 /home/slobodan/Finisa2Z/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 /home/slobodan/Finisa2Z/server.php(21): require_once('/home/slobodan/...')
+#56 {main}
+"} 
